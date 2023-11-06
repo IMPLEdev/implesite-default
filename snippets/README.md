@@ -1,1 +1,1 @@
-# Aboud default snippets
+# About default snippets
