@@ -145,9 +145,7 @@ Other files in a folder will be ignored. You can for example put here README.md 
 
     parent = -1      # which page submenu to show, -99 all pages without any structure, -2 current page parent, -1 current page, 0 main pages, 1+ - id of a page
     levels = 1       # how many levels generate
-    level = 1        # from which level of subpages start
     auth = 0         # minimal auth level, 0 - all or 1-10
-    print = 0        # unactive
     sort = p.aid     # p.aid = page id, p.name = page name, p.published = page published date, p.modified = page modified date, p.auth = page minimal auth level, p.creator = page creator id
     order = asc      # ordering asc or desc
     limit = 0        # 0 no limit or a number, prefix with GET to modify by &limit=X parameter in a url, eg. GET20 will display 20 pages unless there is a ?limit= parametr changing it 
