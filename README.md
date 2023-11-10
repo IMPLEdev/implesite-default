@@ -144,12 +144,12 @@ Other files in a folder will be ignored. You can for example put here README.md 
 `.conf` is a configuration file that by default has this variables and values:
 
     parent = -1      # which page submenu to show, -99 all pages without any structure, -2 current page parent, -1 current page, 0 main pages, 1+ - id of a page
-    levels = 1       # how many levels generate
-    auth = 0         # minimal auth level, 0 - all or 1-10
+    levels = 1       # INT(1-5), how many levels generate (max is 5)
+    auth = 0         # INT(0-10)minimal auth level, 0 - all or 1-10
     sort = p.aid     # p.aid = page id, p.name = page name, p.published = page published date, p.modified = page modified date, p.auth = page minimal auth level, p.creator = page creator id
     order = asc      # ordering asc or desc
-    limit = 0        # 0 no limit or a number, prefix with GET to modify by &limit=X parameter in a url, eg. GET20 will display 20 pages unless there is a ?limit= parametr changing it 
-    start = 0        # 0+, where to start, prefix with GET to modify by &start=X parameter in a url, eg. GET0 will display pages from the first one unless there is a &start= parametr changing it
+    limit = 0        # INT(0-99) no limit or a number, prefix with GET to modify by &limit=X parameter in a url, eg. GET20 will display 20 pages unless there is a ?limit= parametr changing it 
+    start = 1        # INT(1-?), when limit is set, a page number were to start, prefix with GET to modify by &start=X parameter in a url, eg. GET1 will display pages from the first one unless there is a &start= parametr changing it
 
 If you do not declare any of this variables or declare them incorrectly, default variable will be used.
 
